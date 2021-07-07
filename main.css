@@ -95,8 +95,22 @@ h2{
     flex-grow: 1;
     margin-right: 15px;
 }
+.btn{
+    border:2px solid #A19882;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #3C5186;
+    color: #FFF5DE;
+    cursor: pointer;
+}
 
-button{
+.important{
+    background-color: #FFC947;
+    color: #185ADB;
+    font-weight: 600;
+}
+form button{
     background-color: #A19882;
     border: none;
     width: 100px;
