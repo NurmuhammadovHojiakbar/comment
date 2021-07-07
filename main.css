@@ -91,9 +91,8 @@ h2{
 #comment-field{
     border: none;
     outline: none;
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
     flex-grow: 1;
-    margin-right: 15px;
 }
 .btn{
     border:2px solid #A19882;
@@ -114,6 +113,7 @@ form button{
     background-color: #A19882;
     border: none;
     width: 100px;
+    cursor: pointer;
 }
 
 @media(max-width:800px){
