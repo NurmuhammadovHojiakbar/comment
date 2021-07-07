@@ -1,0 +1,133 @@
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 25px;
+}
+
+.container{
+    padding: 50px 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapper{
+    padding-bottom: 30px;
+    border-radius: 5px;
+    max-width: 700px;
+    margin-right: 50px;
+    background-color: #fff;
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+}
+
+h1{
+    margin: 0 0 0 10px;
+    
+}
+
+.comment-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 25px;
+    border-radius: 5px;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+}
+
+h2{
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.list{
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: my-awesome-counter;
+}
+.list__item{
+    counter-increment: my-awesome-counter;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #FFF5DE;
+    background-color: #3C5186;
+}
+
+.list__item::before{
+    content:"#" counter(my-awesome-counter) ". ";
+    color: #C2B8A3;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #A19882;
+    border-radius: 5px;
+    height: 35px;
+}
+
+#comment-field{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    flex-grow: 1;
+    margin-right: 15px;
+}
+
+button{
+    background-color: #A19882;
+    border: none;
+    width: 100px;
+}
+
+@media(max-width:800px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper{
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 25px;
+        margin-right: 0;
+    }
+
+    .comment-wrapper{
+        max-width: 80%;
+        width: 100%;
+    }
+}
+
+@media(max-width:500px){
+    h1{
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .comment-wrapper{
+        max-width: 100%;
+        width: 100%;
+    }
+}
